@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>angelesyaşam — Yakında yayındayız</title>
+  <meta name="description" content="angelesyaşam — Yeni projemiz çok yakında yayında.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="angelesyaşam — Yakında yayındayız">
+  <meta property="og:description" content="Yeni projemiz çok yakında yayında.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xn--angelesyaam-zgc.com/">
+  <link rel="icon" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="brand">
+      <img src="logo.svg" alt="angelesyaşam logo" class="logo" />
+      <h1>angelesyaşam</h1>
+    </header>
+
+    <section class="card">
+      <h2>Yakında yayındayız</h2>
+      <p>
+        Yeni projemizi hazırlıyoruz. Çok yakında burada olacağız.
+        Bu arada güncellemeler için aşağıdaki iletişimden bize ulaşabilirsiniz.
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="mailto:info@xn--angelesyaam-zgc.com">Bize yaz</a>
+        <a class="btn btn-outline" href="#" aria-disabled="true">Sosyal medya (yakında)</a>
+      </div>
+
+      <div class="meta">
+        <p class="small">© <span id="y"></span> angelesyaşam. Tüm hakları saklıdır.</p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
