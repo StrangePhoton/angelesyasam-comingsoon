@@ -38,3 +38,71 @@ p{line-height:1.6}
   border-color: rgba(255,255,255,.15);
 }
 .meta{margin-top:8px}
+
+
+*{box-sizing:border-box}html,body{height:100%}
+:root{
+  --bg: #0b1220;
+  --card: #111a2e;
+  --text: #e8eefc;
+  --muted: #97a3ba;
+  --brand: #2a87ff;
+  --brand-2: #6ad1ff;
+  --ring: rgba(106,209,255,.35);
+}
+body{
+  margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text); background: radial-gradient(1000px 600px at 20% -10%, #0f1a33 0%, transparent 60%), var(--bg);
+}
+.container{min-height:100%; display:grid; place-items:center; padding:40px 20px}
+.brand{display:flex; gap:12px; align-items:center; justify-content:center; margin-bottom:24px}
+.logo{width:42px; height:42px; filter:drop-shadow(0 4px 16px rgba(42,135,255,.35))}
+h1{font-size:28px; margin:0; letter-spacing:.3px}
+.card{
+  width:100%; max-width:720px; padding:28px; border-radius:20px;
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,.35), 0 0 0 8px var(--ring);
+  backdrop-filter: blur(6px);
+}
+h2{margin:8px 0 10px; font-size:26px}
+p{line-height:1.6}
+.small{color:var(--muted); font-size:13px}
+.cta{display:flex; gap:12px; margin:18px 0 10px; flex-wrap:wrap}
+.btn{
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color:#041024; text-decoration:none; padding:10px 16px; border-radius:12px; font-weight:600;
+  border:1px solid rgba(255,255,255,.15);
+}
+.btn:hover{opacity:.95}
+.btn-outline{
+  background: transparent; color:var(--text);
+  border-color: rgba(255,255,255,.15);
+}
+.ecommerce-section{
+  margin: 20px 0 0; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.1);
+}
+.ecommerce-section h3{
+  margin: 0 0 12px; font-size: 16px; color: var(--text); font-weight: 600;
+}
+.platforms{
+  display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;
+}
+.platform-link{
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  padding: 8px 12px; border-radius: 8px; text-decoration: none;
+  background: rgba(255,255,255,.03); border: 1px solid rgba(255,255,255,.08);
+  transition: all 0.2s ease; color: var(--text);
+}
+.platform-link:hover{
+  background: rgba(255,255,255,.06); border-color: rgba(42,135,255,.3);
+  transform: translateY(-1px);
+}
+.platform-logo{
+  width: 20px; height: 20px; object-fit: contain;
+  filter: brightness(0.9);
+}
+.platform-link span{
+  font-size: 11px; font-weight: 500; color: var(--text);
+}
+.meta{margin-top:8px}
